@@ -1,0 +1,37 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.javapuzzle</groupId>
+	<artifactId>java-30</artifactId>
+	<version>0.20</version>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>
+				spring-boot-starter-data-jdbc</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<maven.compiler.source>20</maven.compiler.source>
+		<maven.compiler.target>20</maven.compiler.target>
+	</properties>
+	<build>
+		<sourceDirectory>code</sourceDirectory>
+		<testSourceDirectory>test</testSourceDirectory>
+                <resources>
+                    <resource>
+                        <directory>data</directory>
+                    </resource>
+                </resources>
+	</build>
+</project>
